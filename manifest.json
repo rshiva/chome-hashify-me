@@ -1,0 +1,21 @@
+{
+  "name": "Hashify Me",
+  "version": "1.0",
+  "description": "Send secret self destructing messages",
+  "manifest_version": 2,
+  "permissions": ["declarativeContent", "storage", "http://c72f4044f3bd.ngrok.io/*"],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/lock16.png",
+      "32": "images/lock32.png",
+      "48": "images/lock48.png",
+      "128": "images/lock128.png"
+    }
+  }
+
+}
