@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
-  var submitButton = document.getElementById('message-submit');
-  submitButton.addEventListener('click', function(){
-
+  var submitButton = document.querySelector('form');
+  submitButton.addEventListener('submit', function(event){
+    event.preventDefault();
     const url = "http://c72f4044f3bd.ngrok.io/v1/posts"
     let message = document.getElementById("message").value;
     let salt = document.getElementById("salt").value;
